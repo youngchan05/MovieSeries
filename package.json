@@ -1,0 +1,36 @@
+{
+  "name": "boiler-plate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node index.js",
+    "backend": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngchan05/boiler-plate.git"
+  },
+  "author": "chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youngchan05/boiler-plate/issues"
+  },
+  "homepage": "https://github.com/youngchan05/boiler-plate#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "cookie-parser": "^1.4.5",
+    "cookieparser": "^0.1.0",
+    "express": "^4.17.1",
+    "fixed": "^0.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
