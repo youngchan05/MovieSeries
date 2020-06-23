@@ -1,7 +1,6 @@
 import React , {useEffect, useState} from 'react';
 import {API_URL, API_KEY} from '../../../Config'; 
 function MoviesDetail(props) {
-    console.log(stroe)
     let movieId = props.match.params.movieId
     const [Movie, setMovie] = useState([])
     useEffect(() => {
@@ -10,11 +9,11 @@ function MoviesDetail(props) {
         fetch(endpointInfo)
         .then(response => response.json())
         .then(response => {
-            console.log(response);
+            console.log(response)
             setMovie([...response])
         })
     }, [])
-    return (
+    return ( 
         <div>
             {/*header*/}
 
